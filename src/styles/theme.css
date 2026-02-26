@@ -1,0 +1,109 @@
+/* Light Mode Styles */
+[data-theme="light"] {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Light mode navigation */
+[data-theme="light"] nav {
+  background-color: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+/* Light mode buttons */
+[data-theme="light"] button {
+  color: #0f172a;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] button:not(.bg-blue-600):not(.bg-yellow-600):not(.bg-red-600) {
+  background-color: #e2e8f0;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] button:hover:not(.bg-blue-600):not(.bg-yellow-600):not(.bg-red-600) {
+  background-color: #cbd5e1;
+}
+
+/* Light mode inputs and textareas */
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] input::placeholder {
+  color: #94a3b8;
+}
+
+/* Light mode backgrounds */
+[data-theme="light"] .bg-gray-900 {
+  background-color: #ffffff !important;
+}
+
+[data-theme="light"] .bg-gray-800 {
+  background-color: #f1f5f9 !important;
+}
+
+[data-theme="light"] .bg-gray-700 {
+  background-color: #e2e8f0 !important;
+}
+
+/* Light mode text colors */
+[data-theme="light"] .text-white {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .text-gray-300,
+[data-theme="light"] .text-gray-400,
+[data-theme="light"] .text-gray-500 {
+  color: #64748b !important;
+}
+
+[data-theme="light"] .text-gray-600 {
+  color: #475569 !important;
+}
+
+/* Light mode borders */
+[data-theme="light"] .border-gray-700 {
+  border-color: #e2e8f0 !important;
+}
+
+[data-theme="light"] .border-gray-600 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Light mode text elements */
+[data-theme="light"] p,
+[data-theme="light"] span,
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] label {
+  color: #0f172a !important;
+}
+
+/* Light mode for modal overlays */
+[data-theme="light"] .fixed.inset-0.bg-black {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Light mode cards and containers */
+[data-theme="light"] .rounded-xl,
+[data-theme="light"] .rounded-lg {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Override specific dark colors */
+[data-theme="light"] .bg-opacity-75 {
+  opacity: 0.75;
+}
+
+[data-theme="light"] .backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
