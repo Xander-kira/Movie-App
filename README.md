@@ -71,9 +71,11 @@ A modern, feature-rich movie exploration application built with React + Vite tha
 
 3. **Create environment file**
 
-   ```bash
-   # Create .env file in the root directory
-   echo "VITE_API_KEY=your_tmdb_api_key_here" > .env
+   Create a `.env` file in the root directory with the following variables:
+
+   ```env
+   VITE_API_KEY=your_tmdb_api_key_here
+   VITE_TOP_RATED_URL=https://api.themoviedb.org/3/movie/top_rated
    ```
 
    Get your free API key from [The Movie Database](https://www.themoviedb.org/settings/api)
@@ -90,6 +92,45 @@ A modern, feature-rich movie exploration application built with React + Vite tha
    ```bash
    npm run build
    ```
+
+## 🌐 Deployment
+
+### Deploy to Vercel
+
+1. **Push your code to GitHub** (if not already done)
+
+2. **Import project to Vercel**
+   - Go to [Vercel Dashboard](https://vercel.com/dashboard)
+   - Click **"Add New Project"**
+   - Import your GitHub repository
+
+3. **Configure Environment Variables**
+   - In Vercel Dashboard → Your Project → **Settings** → **Environment Variables**
+   - Add the following variables:
+
+   | Variable Name        | Value                                          |
+   | -------------------- | ---------------------------------------------- |
+   | `VITE_API_KEY`       | Your TMDB API key                              |
+   | `VITE_TOP_RATED_URL` | `https://api.themoviedb.org/3/movie/top_rated` |
+   - Select **Production**, **Preview**, and **Development** for each variable
+   - Click **Save**
+
+4. **Deploy**
+   - Vercel will automatically build and deploy
+   - Any new commits to `main` branch will trigger automatic deployments
+
+5. **Redeploy if needed**
+   - Go to **Deployments** tab
+   - Click three dots (•••) on latest deployment
+   - Select **Redeploy**
+
+### Deploy to Other Platforms
+
+The app can also be deployed to:
+
+- **Netlify** - Similar process with environment variables in Build settings
+- **GitHub Pages** - Requires additional configuration for client-side routing
+- **Railway** - Automatic deployment from GitHub with env vars
 
 ## 🚀 Usage
 
